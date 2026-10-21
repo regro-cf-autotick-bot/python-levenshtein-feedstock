@@ -1,7 +1,7 @@
 {% set name = "python-levenshtein" %}
 {% set camelName = "python-Levenshtein" %}
-{% set version = "0.27.4" %}
-{% set hash_val = "0ae9deae0b0cdf4439bcc39d1408de1fb663aa3632a00264e9b2ff8ea878b38c" %}
+{% set version = "0.27.5" %}
+{% set hash_val = "b01ad92a8e775bae997b60758fb7acc65c8bbd3f77892190616ddc86073c10bd" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
